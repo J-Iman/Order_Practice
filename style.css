@@ -1,1 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Red+Hat+Display:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1440px;
+    background-color: bisque;
+
+    display: grid;
+    place-content: center;
+}
+
+.container {
+background-color: white;
+border-radius: 10px;
+width: 370px;
+
+margin: 5% auto;
+}
+
+#top-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 370px;
+}
+h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+    opacity: 80%;
+}
+
+#long-text{
+    text-align: center;
+    margin: auto 7%;
+    opacity: 50%;
+    font-size: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+    margin-top: 10px;
+}
+
+ .middle-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 7% 5%;
+    border-radius: 5px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px;
+} 
+.left-side {
+    display: flex;
+}
+img {
+    margin-right: 7%;
+}
+.price-section {
+    /* padding: 5% 5%; */
+}
+.price-section > h5 {
+    font-family: 'Red Hat Display', sans-serif;
+    padding-top: 7%;
+}
+#price-text {
+    opacity: 50%;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 14px;
+    padding-top: 5%;
+}
+
+
+/* Right side code*/
+
+.right-side {
+    display: grid;
+    place-content: center;
+}
+
+button {
+    margin: auto 5%;
+    width: 330px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#cancel {
+    margin: 7% 36%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+#cancel > a {
+    color: black;
+}
+
+#change {
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+@media (max-width: 450px) {
     
+.container {
+    margin: 1% auto
+}
+}
